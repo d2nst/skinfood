@@ -3,7 +3,7 @@
 
 /* google fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 :root {
   /* color */
@@ -16,6 +16,7 @@
   /* font */
   --kor-font: 'Noto Sans KR', sans-serif;
   --eng-font: 'Poppins', sans-serif;
+  --point-font: 'Cormorant Garamond', serif;
 }
 
 /* bootstrap dropdown menu */
@@ -46,7 +47,7 @@ a:hover {
 
 .container {
   width: 1320px;
-  margin-top: 110px;
+  padding: 150px 0;
 }
 
 .title {
@@ -240,7 +241,7 @@ header .search_bg i {
   width: 100%;
   height: 600px;
   margin-top: 120px;
-  background: url('../image/skinfood-1.jpg') no-repeat center center;
+  background: url('../image/main__bg.png') no-repeat center center/cover;
 }
 
 .img-box .contents {
@@ -265,7 +266,7 @@ header .search_bg i {
 .img-box .txt .btn-p {
   width: 200px;
   height: 53px;
-  border: 1px solid #707070;
+  border: 1px solid var(--point-color);
   line-height: 50px;
   transition: 0.3s linear;
   font-size: 14px;
@@ -273,14 +274,14 @@ header .search_bg i {
 
 .img-box .txt .btn-p:hover {
   color: #eeecdf;
-  background-color: #202020;
-  border: 1px solid #202020;
+  background-color: var(--point-color);
+  border: 1px solid var(--point-color);
 }
 
-/* --- best-product */
+/* --- best-seller */
 .bestseller {
   width: 100%;
-  height: 800px;
+  height: 100%;
 }
 
 .bestseller .items a {
@@ -354,3 +355,99 @@ header .search_bg i {
   font-size: 17px;
   font-weight: 500;
 }
+
+/* --- vegan */
+.vegan {
+  width: 100%;
+  height: 546px;
+  background: var(--point-color);
+  display: flex;
+  position: relative;
+}
+
+.vegan .container {
+  padding: 0;
+}
+
+.vegan .contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vegan .contents .txt {
+  text-align: center;
+  font-family: var(--point-font);
+  color: #fff;
+  position: relative;
+  left: 25%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.vegan .contents .txt h2 {
+  font-size: 28px;
+}
+
+.vegan .contents .txt .vegan__name {
+  font-size: 60px;
+  padding: 20px 0 50px;
+}
+
+.vegan .contents a {
+  width: 50%;
+}
+
+.vegan .contents .vegan-img {
+  width: 100%;
+  /* height: 546px; */
+  position: relative;
+}
+
+.vegan .contents .vegan-img span {
+  font-family: var(--kor-font);
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  opacity: 0;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.vegan .contents .vegan-img span::after {
+  content: '';
+  display: block;
+  width: 95px;
+  height: 1px;
+  position: absolute;
+  left: 50%;
+  top: 25px;
+  transform: translate(-50%, -50%);
+  background: #fff;
+}
+
+.vegan .contents .vegan-img:hover span {
+  opacity: 1;
+}
+
+.vegan .contents .vegan-img img {
+  width: 100%;
+  display: block;
+}
+
+.vegan .contents .vegan-img::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #1b1b1b81;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* --- */
