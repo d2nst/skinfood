@@ -1,0 +1,22 @@
+/* common */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--kor-font);
+  background: var(--bg-color);
+}
+
+a {
+  color: #333;
+}
+
+a:hover {
+  color: #000;
+}
+
+.container {
+  width: 1320px;
+  padding: 150px 0;
+}

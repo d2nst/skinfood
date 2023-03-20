@@ -27,3 +27,13 @@ window.addEventListener('scroll', () => {
     bannerOut.style.display = `block`;
   }
 });
+
+// swiper JS
+const swiper = new Swiper('.swiper', {
+  spaceBetween: 50, // 슬라이드 사이 여백
+  slidesPerView: 3, // 한 슬라이드에 보여줄 갯수
+  autoplay: {
+    delay: 4000,
+  },
+  loop: true,
+});

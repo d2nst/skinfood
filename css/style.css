@@ -50,29 +50,7 @@ a:hover {
   padding: 150px 0;
 }
 
-.title {
-  text-align: center;
-  font-family: var(--eng-font);
-  font-size: 22px;
-  font-weight: 500;
-  margin-bottom: 100px;
-  position: relative;
-}
-
-.title::after {
-  content: '';
-  display: block;
-  width: 65px;
-  height: 1px;
-  position: absolute;
-  left: 50%;
-  top: 50px;
-  transform: translate(-50%, -50%);
-  background: #000;
-}
-
-/* layout */
-
+/* --- HEADER */
 header {
   width: 100%;
   height: 120px;
@@ -110,7 +88,6 @@ header .banner {
   right: 0;
   top: 0;
 }
-
 /* banner end */
 
 header .main-menu {
@@ -235,13 +212,12 @@ header .search_bg i {
   cursor: pointer;
 }
 
-/* --- title --- */
-
+/* --- imgBox */
 .img-box {
   width: 100%;
   height: 600px;
   margin-top: 120px;
-  background: url('../image/main__bg.png') no-repeat center center/cover;
+  background: url('../image/imgbox__bg.png') no-repeat center center/cover;
 }
 
 .img-box .contents {
@@ -278,21 +254,56 @@ header .search_bg i {
   border: 1px solid var(--point-color);
 }
 
-/* --- best-seller */
+/* 메인페이지 title 제목 */
+.title {
+  text-align: center;
+  font-family: var(--eng-font);
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  width: 65px;
+  height: 1px;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translate(-50%, -50%);
+  background: #000;
+}
+
+/* --- bestseller */
 .bestseller {
   width: 100%;
   height: 100%;
 }
 
-.bestseller .items a {
+.bestseller .items .item .item-img {
+  width: 210px;
+  height: 260px;
+  padding: 18px 12px;
+}
+
+.bestseller .items .item .item-img img {
+  width: 100%;
+  height: 100%;
+}
+
+/* --- items 메인페이지 상품 정렬 */
+
+.items {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-.bestseller .items .item {
-  width: 400px;
-  height: 480px;
+.items .item {
+  width: 350px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -301,65 +312,69 @@ header .search_bg i {
   padding: 20px 12px;
 }
 
-.bestseller .items .item:hover {
+.items .item:hover {
   box-shadow: 2px 2px 10px #8e8d7d33;
 }
 
-.bestseller .items .item .item-img {
-  width: 220px;
-  height: 280px;
+.items .item .item-img {
+  width: 280px;
+  height: 300px;
   padding: 18px 12px;
 }
 
-.bestseller .items .item .item-img img {
+.items .item .item-img img {
   width: 100%;
-  height: 100%;
   object-fit: contain;
 }
 
-.bestseller .items .item .star-rating {
+.items .item .star-rating {
   position: relative;
   right: -30%;
   top: 0;
   font-size: 14px;
-  padding: 10px 0;
+  padding: 7px 0;
 }
 
-.bestseller .items .item .star-rating i {
+.items .item .star-rating i {
   color: var(--main-color);
 }
 
-.bestseller .items .item .star-rating p {
+.items .item .star-rating p {
   display: inline-block;
 }
 
-.bestseller .items .item .star-rating p > span {
+.items .item .star-rating p > span {
   font-size: 15px;
   font-weight: 500;
 }
 
-.bestseller .items .item .description {
+.items .item .description {
   width: 240px;
   position: relative;
   top: 2%;
-  line-height: 1.5;
+  line-height: 1.3;
   text-align: center;
   font-size: 14px;
 }
 
-.bestseller .items .item .description p:first-child {
+.items .item .description p:first-child {
   padding-bottom: 10px;
 }
 
-.bestseller .items .item .description p:last-child {
+.items .item .description .price {
   font-size: 17px;
   font-weight: 500;
+}
+
+.items .item .description .consumer-price {
+  color: #888;
+  text-decoration: line-through;
 }
 
 /* --- vegan */
 .vegan {
   width: 100%;
-  height: 546px;
+  height: 528px;
   background: var(--point-color);
   display: flex;
   position: relative;
@@ -369,13 +384,14 @@ header .search_bg i {
   padding: 0;
 }
 
-.vegan .contents {
+.vegan .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.vegan .contents .txt {
+.vegan .row .txt {
+  width: 400px;
   text-align: center;
   font-family: var(--point-font);
   color: #fff;
@@ -385,26 +401,26 @@ header .search_bg i {
   transform: translateX(-50%);
 }
 
-.vegan .contents .txt h2 {
+.vegan .row .txt h2 {
   font-size: 28px;
 }
 
-.vegan .contents .txt .vegan__name {
+.vegan .row .txt .vegan__name {
   font-size: 60px;
   padding: 20px 0 50px;
 }
 
-.vegan .contents a {
+.vegan .row a {
   width: 50%;
 }
 
-.vegan .contents .vegan-img {
+.vegan .row .vegan-img {
   width: 100%;
   /* height: 546px; */
   position: relative;
 }
 
-.vegan .contents .vegan-img span {
+.vegan .row .vegan-img span {
   font-family: var(--kor-font);
   color: #fff;
   font-size: 16px;
@@ -417,7 +433,7 @@ header .search_bg i {
   transition: all 0.5s ease-in-out 0s;
 }
 
-.vegan .contents .vegan-img span::after {
+.vegan .row .vegan-img span::after {
   content: '';
   display: block;
   width: 95px;
@@ -429,16 +445,16 @@ header .search_bg i {
   background: #fff;
 }
 
-.vegan .contents .vegan-img:hover span {
+.vegan .row .vegan-img:hover span {
   opacity: 1;
 }
 
-.vegan .contents .vegan-img img {
+.vegan .row .vegan-img img {
   width: 100%;
   display: block;
 }
 
-.vegan .contents .vegan-img::after {
+.vegan .row .vegan-img::after {
   content: '';
   display: block;
   width: 100%;
@@ -450,4 +466,15 @@ header .search_bg i {
   transform: translate(-50%, -50%);
 }
 
-/* --- */
+/* --- New Arrivals */
+
+.new-arrivals {
+  width: 100%;
+  height: 100%;
+}
+
+.new-arrivals .items {
+  width: 100%;
+  height: 480px;
+  padding: 2px 2px 10px;
+}
