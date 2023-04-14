@@ -37,3 +37,19 @@ const swiper = new Swiper('.swiper', {
   },
   loop: true,
 });
+
+const newSwiper = new Swiper('.new-swiper', {
+  spaceBetween: 30, // 슬라이드 사이 여백
+  slidesPerView: 5, // 한 슬라이드에 보여줄 갯수
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+  loopAdditionalSlides: 1,
+
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'progressbar',
+  },
+});
