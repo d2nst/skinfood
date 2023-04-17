@@ -12,7 +12,6 @@
 
   <!-- fontawesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
-
   <!-- swiper -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -35,11 +34,11 @@
         </a>
       </h1>
       <nav>
-        <ul class="main-menu">
-          <li class="nav-item dropdown" aria-labelledby="navbarDropdownMenuLink"><a class="nav-link"
-              href="bestseller.html" id="navbarDropdownMenuLink" role="button" aria-expanded="false">상품</a>
-            <ul class="sub-menu dropdown-menu">
-              <li><a href="bestseller.html" class="dropdown-item">베스트신상품</a></li>
+        <ul class="header__menu">
+          <li class="nav-item dropdown" aria-labelledby="navbarDropdownMenuLink"><a class="nav-link" href="product.html"
+              id="navbarDropdownMenuLink" role="button" aria-expanded="false">상품</a>
+            <ul class="sub__menu dropdown-menu">
+              <li><a href="product.html" class="dropdown-item">베스트신상품</a></li>
               <li><a href="javascript:void(0)" class="dropdown-item">유형별</a></li>
               <li><a href="javascript:void(0)" class="dropdown-item">고민별</a></li>
               <li><a href="javascript:void(0)" class="dropdown-item">라인별</a></li>
@@ -48,34 +47,35 @@
               <li><a href="javascript:void(0)" class="dropdown-item">비건</a></li>
             </ul>
           </li>
-          <li><a href="">이벤트</a></li>
-          <li><a href="">리뷰</a></li>
+          <li><a href="javascript:void(0)">이벤트</a></li>
+          <li><a href="javascript:void(0)">리뷰</a></li>
           <li class="nav-item dropdown" aria-labelledby="navbarDropdownMenuLink"><a class="nav-link"
               href="javascript:void(0)" id="navbarDropdownMenuLink" role="button" aria-expanded="false"><a
-                href="">커뮤니티</a>
-              <ul class="sub-menu dropdown-menu">
-                <li><a href="" class="dropdown-item">멤버쉽</a></li>
-                <li><a href="" class="dropdown-item">FAQ</a></li>
-                <li><a href="" class="dropdown-item">공지사항</a></li>
-                <li><a href="" class="dropdown-item">매장안내</a></li>
-                <li><a href="" class="dropdown-item">1:1문의하기</a></li>
+                href="community.html">커뮤니티</a>
+              <ul class="sub__menu dropdown-menu">
+                <li><a href="community.html" class="dropdown-item">공지사항</a></li>
+                <li><a href="javascript:void(0)" class="dropdown-item">멤버쉽</a></li>
+                <li><a href="javascript:void(0)" class="dropdown-item">FAQ</a></li>
+                <li><a href="javascript:void(0)" class="dropdown-item">매장안내</a></li>
+                <li><a href="javascript:void(0)" class="dropdown-item">1:1문의하기</a></li>
               </ul>
           </li>
-          <li class="nav-item dropdown" aria-labelledby="navbarDropdownMenuLink"><a class="nav-link" href="./about.html"
-              id="navbarDropdownMenuLink" role="button" aria-expanded="false"><a href="">어바웃
+          <li class="nav-item dropdown" aria-labelledby="navbarDropdownMenuLink"><a class="nav-link"
+              href="javascript:void(0)" id="navbarDropdownMenuLink" role="button" aria-expanded="false"><a
+                href="about.html">어바웃
                 스킨푸드</a>
-              <ul class="sub-menu dropdown-menu">
+              <ul class="sub__menu dropdown-menu">
                 <li><a href="./about.html" class="dropdown-item">브랜드 스토리</a></li>
-                <li><a href="#" class="dropdown-item">스킨푸드 소식</a></li>
-                <li><a href="#" class="dropdown-item">사회 공헌</a></li>
-                <li><a href="#" class="dropdown-item">전자공고</a></li>
-                <li><a href="#" class="dropdown-item">SNS</a></li>
-                <li><a href="#" class="dropdown-item">잘버렸습니다 캠페인</a></li>
+                <li><a href="javascript:void(0)" class="dropdown-item">스킨푸드 소식</a></li>
+                <li><a href="javascript:void(0)" class="dropdown-item">사회 공헌</a></li>
+                <li><a href="javascript:void(0)" class="dropdown-item">전자공고</a></li>
+                <li><a href="javascript:void(0)" class="dropdown-item">SNS</a></li>
+                <li><a href="javascript:void(0)" class="dropdown-item">잘버렸습니다 캠페인</a></li>
               </ul>
           </li>
         </ul>
       </nav>
-      <div class="h_right">
+      <div class="header__info">
         <ul>
           <li><a href="/">로그인</a></li>
           <li><a href="/">위시리스트</a></li>
@@ -86,36 +86,47 @@
         </div>
       </div>
     </div>
-    <div class="search_bg">
+    <div class="search__bg">
       <input type="text" name="" id="" placeholder="무엇을 찾아드릴까요?" />
       <i class="fa-solid fa-xmark"></i>
     </div>
     <p class="banner">App 설치하고 1천원 쿠폰 받자!</p>
   </header>
   <!-- E:header -->
-
-  <section class="img-box">
-    <div class="row">
-      <div class="txt">
+  <section id="home">
+    <div class="container">
+      <div class="row">
         <h2>먹지마세요 <br> 피부에 양보하세요.</h2>
         <p>스킨푸드는 ‘먹어서 좋은 음식은 피부에도 좋다’라는
           모토와 함께 건강한 ‘푸드’의 영양을 그대로 담아낸
           오리지널 푸드 코스메틱 <br>브랜드입니다.</p>
-        <a href="javascript:void(0)" class="btn btn-p">제품 보러가기</a>
+        <a href="javascript:void(0)">제품 보러가기</a>
       </div>
     </div>
   </section>
-  <!-- E:img-box -->
-
-  <section class="bestseller">
+  <!-- E:home-->
+  <section id="bestseller">
     <div class="container">
       <div class="row">
         <div class="title">
-          <h3>Bestsellers</h3>
+          <h2>Bestsellers</h3>
         </div>
         <div class="items">
+          <a href="details.html" class="item">
+            <div class="item__img">
+              <img src="./image/items/best/minari-pad.png" alt="미나리패드" />
+            </div>
+            <div class="star-rating">
+              <i class="fa-solid fa-star"></i>
+              <p><span>4.9</span> (817)</p>
+            </div>
+            <div class="description">
+              <p><span>[미나리패드]</span> 판토테닉 워터파슬리 클리어 패드 (250g, 60매)</p>
+              <p class="price">26,000원</p>
+            </div>
+          </a>
           <a href="javascript:void(0)" class="item">
-            <div class="item-img">
+            <div class="item__img">
               <img src="./image/items/best/carrot-pad.png" alt="당근패드" />
             </div>
             <div class="star-rating">
@@ -128,7 +139,7 @@
             </div>
           </a>
           <a href="javascript:void(0)" class="item">
-            <div class="item-img">
+            <div class="item__img">
               <img src="./image/items/best/carrot-ample.png" alt="당근앰플" />
             </div>
             <div class="star-rating">
@@ -140,26 +151,13 @@
               <p class="price">27,000원</p>
             </div>
           </a>
-          <a href="javascript:void(0)" class="item">
-            <div class="item-img">
-              <img src="./image/items/best/minari-pad.png" alt="미나리패드" />
-            </div>
-            <div class="star-rating">
-              <i class="fa-solid fa-star"></i>
-              <p><span>4.9</span> (817)</p>
-            </div>
-            <div class="description">
-              <p><span>[미나리패드]</span> 판토테닉 워터파슬리 클리어 패드 (250g, 60매)</p>
-              <p class="price">26,000원</p>
-            </div>
-          </a>
+
         </div>
       </div>
     </div>
   </section>
   <!-- E:bestseller -->
-
-  <section class="vegan">
+  <section id="vegan">
     <div class="container">
       <div class="row">
         <div class="txt">
@@ -172,29 +170,27 @@
           <p>동물성 원료 사용 X 착한 가치 소비 O </p>
         </div>
         <a href="javascript:void(0)">
-          <div class="vegan-img">
+          <div class="vegan__img">
             <span>제품 보러가기</span>
             <img src="./image/vegan-event.jpg" alt="비건이벤트 이미지" />
           </div>
         </a>
-        <!-- 상세페이지 작성 시 주소 넣기 -->
       </div>
     </div>
   </section>
   <!-- E:vegan -->
-
-  <section class="new-arrivals">
+  <section id="new-arrivals">
     <div class="container">
       <div class="row">
         <div class="title">
-          <h3>NEW Arrivals</h3>
+          <h2>NEW Arrivals</h2>
         </div>
 
         <div class="swiper items">
           <div class="swiper-wrapper">
             <a href="javascript:void(0)" class="swiper-slide item">
-              <div class="item-img">
-                <img src="./image/items/신상품/도토리패드.png" alt="도토리 모공 패드" />
+              <div class="item__img">
+                <img src="./image/items/new/dotori_pad.png" alt="도토리 모공 패드" />
               </div>
               <div class="star-rating">
                 <i class="fa-solid fa-star"></i>
@@ -207,8 +203,8 @@
               </div>
             </a>
             <a href="javascript:void(0)" class="swiper-slide item">
-              <div class="item-img">
-                <img src="./image/items/신상품/도토리앰플.png" alt="도토리 모공 앰플" />
+              <div class="item__img">
+                <img src="./image/items/new/dotori_ample.png" alt="도토리 모공 앰플" />
               </div>
               <div class="star-rating">
                 <i class="fa-solid fa-star"></i>
@@ -221,8 +217,8 @@
               </div>
             </a>
             <a href="javascript:void(0)" class="swiper-slide item">
-              <div class="item-img">
-                <img src="./image/items/신상품/유자 씨 잡티 맑음 세럼.jpeg" alt="미나리패드" />
+              <div class="item__img">
+                <img src="./image/items/new/yuja_clear_toner.png" alt="유자씨 잡티 맑은토너" />
               </div>
               <div class="star-rating">
                 <i class="fa-solid fa-star"></i>
@@ -235,8 +231,8 @@
               </div>
             </a>
             <a href="javascript:void(0)" class="swiper-slide item">
-              <div class="item-img">
-                <img src="./image/items/신상품/로열허니 착한 토너.png" alt="로열허니 착한 토너" />
+              <div class="item__img">
+                <img src="./image/items/new/royalhoney_toner.png" alt="로열허니 착한 토너" />
               </div>
               <div class="star-rating">
                 <i class="fa-solid fa-star"></i>
@@ -249,9 +245,8 @@
               </div>
             </a>
             <a href="javascript:void(0)" class="swiper-slide item">
-              <div class="item-img">
-                <img src="./image/items/신상품/로열허니 프로폴리스 인리치 멀티 밤(9g).jpeg"
-                  alt="로열허니 프로폴리스 인리치 멀티 밤" />
+              <div class="item__img">
+                <img src="./image/items/new/royalhoney_inrich_bomb.png" alt="로열허니 프로폴리스 인리치 멀티 밤" />
               </div>
               <div class="star-rating">
                 <i class="fa-solid fa-star"></i>
@@ -263,8 +258,8 @@
               </div>
             </a>
             <a href="javascript:void(0)" class="swiper-slide item">
-              <div class="item-img">
-                <img src="./image/items/신상품/유자 씨 잡티 맑음 크림.jpeg" alt="유자씨 잡티 맑음 크림" />
+              <div class="item__img">
+                <img src="./image/items/new/yuja_cream.png" alt="유자씨 잡티 맑음 크림" />
               </div>
               <div class="star-rating">
                 <i class="fa-solid fa-star"></i>
@@ -275,18 +270,45 @@
                 <p class="price">30,000원</p>
               </div>
             </a>
+            <a href="javascript:void(0)" class="swiper-slide item">
+              <div class="item__img">
+                <img src="./image/items/new/gold_caviar_cream.png" alt="골드 캐비어 이엑스 크림" />
+              </div>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <p><span>5</span> (1,061)</p>
+              </div>
+              <div class="description">
+                <p>골드 캐비어 이엑스 크림 (50ml)</p>
+                <p class="consumer-price">30,000원</p>
+                <p class="price">21,000원</p>
+              </div>
+            </a>
+            <a href="javascript:void(0)" class="swiper-slide item">
+              <div class="item__img">
+                <img src="./image/items/new/gold_caviar_toner.png" alt="골드 캐비어 이엑스 토너" />
+              </div>
+              <div class="star-rating">
+                <i class="fa-solid fa-star"></i>
+                <p><span>4.9</span> (772)</p>
+              </div>
+              <div class="description">
+                <p>골드 캐비어 이엑스 토너 (145ml)</p>
+                <p class="consumer-price">30,000원</p>
+                <p class="price">19,200원</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
   <!-- E:new-arrivals -->
-
-  <section class="event">
+  <section id="event">
     <div class="container">
       <div class="row">
         <div class="title">
-          <h3>Event</h3>
+          <h2>Event</h2>
         </div>
         <div class="items">
           <figure>
@@ -324,12 +346,11 @@
     </div>
   </section>
   <!-- E:event -->
-
-  <section class="instagram">
+  <section id="instagram">
     <div class="container">
       <div class="row">
         <div class="title">
-          <h3>Instagram</h3>
+          <h2>Instagram</h2>
         </div>
         <div class="contents">
           <div class="txt">
@@ -418,7 +439,7 @@
           <li><a href="javascript:void(0)">고객센터</a></li>
         </ul>
         <div class="grobal-box">
-          <a href="" class="box">Grobal Skinfood</a>
+          <a href="javascript:void(0)" class="box">Grobal Skinfood</a>
           <form action="" class="box">
             <select name="language">
               <option value="kr" selected> korea
@@ -436,6 +457,7 @@
       </div>
     </div>
   </footer>
+  <!-- E:footer-->
 </body>
 
 </html>
