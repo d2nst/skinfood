@@ -22,6 +22,7 @@
 
 
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
   <script src="./js/main.js" defer></script>
 </head>
 
@@ -85,6 +86,7 @@
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
       </div>
+
     </div>
     <div class="search__bg">
       <input type="text" name="" id="" placeholder="무엇을 찾아드릴까요?" />
@@ -93,14 +95,61 @@
     <p class="banner">App 설치하고 1천원 쿠폰 받자!</p>
   </header>
   <!-- E:header -->
+  <div class="mobile-header">
+    <div class="mobile-wrap">
+      <a class="hamburger-button" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <h1>
+        <a href="index.html">
+          <img src="./image/logo.png" class="logo" alt="로고이미지" />
+        </a>
+      </h1>
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+    <div class="overlay-wrap">
+      <div class="overlay">
+        <nav class="mobile-menu">
+          <ul>
+            <li>
+              <a href="product.html">상품</a>
+            </li>
+            <li>
+              <a href="#">이벤트</a>
+            </li>
+            <li>
+              <a href="#">리뷰</a>
+            </li>
+            <li>
+              <a href="community.html">커뮤니티</a>
+            </li>
+            <li>
+              <a href="about.html">어바웃 스킨푸드</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- E:Mobile header -->
   <section id="home">
     <div class="container">
       <div class="row">
-        <h2>먹지마세요 <br> 피부에 양보하세요.</h2>
-        <p>스킨푸드는 ‘먹어서 좋은 음식은 피부에도 좋다’라는
-          모토와 함께 건강한 ‘푸드’의 영양을 그대로 담아낸
-          오리지널 푸드 코스메틱 <br>브랜드입니다.</p>
-        <a href="javascript:void(0)">제품 보러가기</a>
+        <div class="col-lg-6 col-12 txt">
+          <h2>먹지마세요 <br> 피부에 양보하세요.</h2>
+          <p>스킨푸드는 ‘먹어서 좋은 음식은 피부에도 좋다’라는
+            모토와 함께 건강한 ‘푸드’의 영양을 그대로 담아낸
+            오리지널 푸드 코스메틱 <br>브랜드입니다.</p>
+          <a href="javascript:void(0)">제품 보러가기</a>
+        </div>
+        <div class="col-lg-6 col-12 home-bg">
+          <img src="./image/imgbox__bg.png" alt="" />
+        </div>
       </div>
     </div>
   </section>

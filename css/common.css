@@ -90,7 +90,6 @@ header .banner {
   top: 0;
 }
 /* banner end */
-
 header .header__menu {
   display: flex;
 }
@@ -213,14 +212,21 @@ header .search__bg i {
   cursor: pointer;
 }
 
-/* category */
+/* mobile */
+.mobile-header {
+  display: none;
+}
 
+/* category */
 .category {
   margin-top: 160px;
 }
 
+.category .container {
+  padding: 0;
+}
+
 .category ul {
-  margin-left: 100px;
   display: flex;
   align-items: center;
 }

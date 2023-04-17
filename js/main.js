@@ -1,4 +1,5 @@
 const scroller = document.querySelector('.header');
+const mobileScroller = document.querySelector('.mobile-header');
 const bannerOut = document.querySelector('.banner');
 const searchIcon = document.querySelector('.search');
 const searchActive = document.querySelector('.search__bg');
@@ -54,37 +55,12 @@ const newSwiper = new Swiper('.new-swiper', {
   },
 });
 
-// product.html - 상세페이지 펼쳐보기
-window.onload = function () {
-  // 초기 이미지 높이 설정
+// hamburger menu-bar
 
-  const detail = document.querySelector('.detail');
-  detail.style.height = '900px';
+const hamburgerBar = document.querySelector('.hamburger-button');
+const overlay = document.querySelector('.overlay');
 
-  // 상세보기 버튼 클릭 시 이미지 높이 전체/1000px로 설정
-  document.querySelector('.btn-open').addEventListener('click', function (e) {
-    e.preventDefault();
-    const detail = document.querySelector('.detail');
-    const currentHeight = parseInt(window.getComputedStyle(detail).height);
-    const newHeight =
-      currentHeight === 900
-        ? parseInt(
-            window.getComputedStyle(detail.querySelector('.content')).height
-          )
-        : 1000;
-    detail.style.transition = 'height 0.5s ease-in-out';
-    detail.style.height = newHeight + 'px';
-
-    const scrollY = window.scrollY;
-    window.scrollTo(0, scrollY);
-  });
-};
-
-// product.html - rating__bar
-const progressBars = document.querySelectorAll('.progress-bar');
-
-progressBars.forEach((progressBar) => {
-  const targetRate = progressBar.getAttribute('data-num');
-  const progressValue = progressBar.querySelector('.progress-value');
-  progressValue.style.width = `${targetRate}%`;
+hamburgerBar.addEventListener('click', () => {
+  hamburgerBar.classList.toggle('.on');
+  overlay.classList.toggle('visible');
 });

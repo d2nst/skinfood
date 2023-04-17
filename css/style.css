@@ -10,30 +10,31 @@
   width: 100%;
   height: 600px;
   margin-top: 120px;
-  background: url('../image/imgbox__bg.png') no-repeat center center/cover;
   position: relative;
 }
 
-#home .row {
+#home .txt {
   position: absolute;
   left: 73%;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 420px;
+  z-index: 1;
 }
 
-#home h2 {
+#home .txt h2 {
   font-size: 30px;
   margin-bottom: 23px;
   line-height: 1.3;
 }
 
-#home p {
+#home .txt p {
   line-height: 1.5;
   margin-bottom: 30px;
 }
 
-#home a {
+#home .txt a {
+  display: block;
   width: 200px;
   height: 53px;
   border: 1px solid var(--point-color);
@@ -43,10 +44,25 @@
   text-align: center;
 }
 
-#home a:hover {
+#home .txt a:hover {
   color: #eeecdf;
   background-color: var(--point-color);
   border: 1px solid var(--point-color);
+}
+
+#home .home-bg {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+#home .home-bg img {
+  position: relative;
+  left: -270px;
 }
 
 /* --- 모든 페이지 title 제목 --- */
