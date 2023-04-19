@@ -294,6 +294,10 @@
     padding: 0;
   }
 
+  #products .p__add .item a {
+    top: 100%;
+  }
+
   #products .product .txt {
     width: 100%;
     padding: 50px;
