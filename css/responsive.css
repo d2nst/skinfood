@@ -354,8 +354,9 @@
   }
 
   /* 커뮤니티 - 아코디언 메뉴 */
-  #community .notice span {
-    flex-wrap: wrap;
+  #community .notice .select {
+    display: inline-block;
+    margin: 10px 20px;
   }
 
   .accordion {
@@ -392,10 +393,16 @@
   }
 
   .accordion-body {
-    padding: 10px 30px;
+    padding: 10px 20px;
+    line-height: 1.4;
+    font-size: 14px;
   }
   .accordion-body img {
     width: 90%;
+  }
+
+  .accordion-button {
+    font-size: 14px;
   }
 
   /* footer */
