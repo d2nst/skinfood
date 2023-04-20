@@ -1,9 +1,14 @@
 const scroller = document.querySelector('.header');
-const mobileScroller = document.querySelector('.mobile-header');
 const bannerOut = document.querySelector('.banner');
 const searchIcon = document.querySelector('.search');
 const searchActive = document.querySelector('.search__bg');
 const searchClose = document.querySelector('.search__bg i');
+
+const mobileSearchIcon = document.querySelector('.mobile-header .search');
+const mobileSearchActive = document.querySelector('.mobile-header .search__bg');
+const mobileSearchClose = document.querySelector(
+  '.mobile-header .search__bg i'
+);
 
 searchIcon.addEventListener('click', () => {
   searchActive.classList.toggle('active');
@@ -11,6 +16,14 @@ searchIcon.addEventListener('click', () => {
 
 searchClose.addEventListener('click', () => {
   searchActive.classList.remove('active');
+});
+
+mobileSearchIcon.addEventListener('click', () => {
+  mobileSearchActive.classList.toggle('active');
+});
+
+mobileSearchClose.addEventListener('click', () => {
+  mobileSearchActive.classList.remove('active');
 });
 
 window.addEventListener('scroll', () => {
@@ -109,3 +122,26 @@ hamburgerBar.addEventListener('click', () => {
   hamburgerBar.classList.toggle('.on');
   overlay.classList.toggle('visible');
 });
+
+// title 애니메이션
+window.onload = function () {
+  window.addEventListener('scroll', function (e) {
+    scrollEvent();
+  });
+};
+
+const scrollEvent = function () {
+  // 사용자 모니터 화면 높이 + 스크롤이 움직인 높이
+  const scroll = window.innerHeight + window.scrollY;
+
+  // 애니메이션 효과를 넣을 DOM 객체 배열
+  const itemList = document.querySelectorAll('.fade-up');
+
+  Array.prototype.forEach.call(itemList, function (li) {
+    // 객체 위치와 높이 비교 : 화면에 표출되는 높이인지 체크
+    if (li.offsetTop < scroll) {
+      // 객체 animatable 클래스 지우고, animated 클래스 추가
+      li.classList.add('animated');
+    }
+  });
+};
